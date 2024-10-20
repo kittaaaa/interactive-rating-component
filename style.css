@@ -1,0 +1,152 @@
+:root {
+    --body-bg: hsl(216, 12%, 8%);
+    --card-bg: hsl(213, 19%, 18%);
+    --title: hsl(0, 0%, 100%);
+    --text: hsl(217, 12%, 63%);
+    --submit-btn: hsl(25, 97%, 53%);
+}
+
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+button {
+    cursor: pointer;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+.wraper {
+    width: inherit;
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--body-bg);
+}
+main {
+    width: 90%;
+    max-width: 400px;
+    padding: 1.5rem;
+    background-color: var(--card-bg);
+    line-height: 1.6;
+    color: var(--text);
+    border-radius: 10px;
+}
+
+.wraper header {
+    margin-bottom: 1.5rem;
+}
+
+.wraper header .btn-star {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    /* styling button */
+    background-color: transparent;
+    border: none;
+    box-shadow:inset var(--body-bg) 0px 0px 30px -12px;
+
+}
+
+.wraper main .hero-text h1{
+    font-size: 1.8em;
+    color: var(--title);
+    margin-bottom: 1re    /* line-height: 1.6; */m;
+}
+.wraper main .btn-wraper {
+    display: flex;
+    justify-content: space-around;
+    margin: 1.3rem 0 1.3rem 0;
+}
+.wraper main .btn-wraper .btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+    color: var(--text);
+    box-shadow:inset var(--body-bg) 0px 0px 30px -12px;
+}
+
+.selected {
+    background-color: var(--title);
+    color: var(--body-bg);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    box-shadow:inset var(--body-bg) 0px 0px 30px -12px;
+}
+.wraper main .btn-wraper .btn:hover {
+    color: var(--body-bg);
+    background-color: white;
+    
+}
+.wraper main .submit-btn-wraper button{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 150px;
+    background-color: var(--submit-btn);
+    outline: none;
+    border: none;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-weight: 700;
+}
+.wraper main .submit-btn-wraper button:hover {
+    background-color: white;
+}
+.wraper .thank-you-card {
+    width: 90%;
+    max-width: 380px;
+    background-color: var(--card-bg);
+    color: var(--text);
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    line-height: 1.6;
+    
+}
+.wraper .thank-you-card .hero-image:nth-child(1) {
+    color: var(--submit-btn);
+    padding: 1rem;
+}
+.wraper .thank-you-card .hero-image img {
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+.wraper .thank-you-card .hero-image p {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0.2rem 0.7rem 0.2rem 0.7rem;
+    border-radius: 50px;
+    box-shadow:inset var(--body-bg) 0px 0px 30px -12px;
+}
+.selected {
+    background-color: var(--title);
+    color: var(--text);
+}
+.wraper .thank-you-card .hero-text {
+    /* margin-bottom: 1rem; */
+    padding: 0.4rem;
+}
+.wraper .thank-you-card .hero-text h1 {
+    margin-bottom: 1rem;
+    color: var(--title);
+}
+.hide {
+    display: none;
+}
